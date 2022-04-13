@@ -2,10 +2,21 @@ name: Build
 
 on:
   push:
-    tags:
-      - 'v*'
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v3.0.1
+        with:
+          files: books
+          confif_file: .markdownlint.yaml
+
   build:
     runs-on: ubuntu-latest
     strategy:
@@ -13,19 +24,40 @@ jobs:
         collection: [mondstadt,liyue,inazuma,teyvat]
     steps:
       - uses: actions/checkout@v2
+
       - name: Create files list
         id: files_list
         run: echo "::set-output name=files::$(printf '"%s" ' books/${{ matrix.collection }}/*)"
-      - name: Build EPUB with pandocs
+
+      - name: Build EPUB with pandoc
         uses: docker://pandoc/core:2.18
         with:
           args: >-
             -o genshin-impact-book-collection-${{ matrix.collection }}-${{ github.ref_name }}.epub
             books/foreword.md
             ${{ steps.files_list.outputs.files }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.collection }}
+          path: '*.epub'
+          if-no-files-found: error
+
+  release:
+    needs: [build, lint]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        id: download
+        with:
+          path: books
+
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: '*.epub'
+          files: '${{steps.download.outputs.download-path}}/**/*.epub'
           fail_on_unmatched_files: true
           generate_release_notes: true

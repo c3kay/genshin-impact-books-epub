@@ -1,6 +1,5 @@
 # Wind, Courage and Wings
 
-
 When the first wisp of wind brushed across the land
 
 Birds that yearned for the sky had wings

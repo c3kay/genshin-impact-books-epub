@@ -15,7 +15,6 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.0.1
         with:
           files: books
-          confif_file: .markdownlint.yaml
 
   build:
     runs-on: ubuntu-latest

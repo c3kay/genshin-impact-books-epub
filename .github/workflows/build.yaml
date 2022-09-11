@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        collection: [mondstadt,liyue,inazuma,teyvat]
+        collection: [mondstadt,liyue,inazuma,sumeru,teyvat]
     steps:
       - uses: actions/checkout@v2
 

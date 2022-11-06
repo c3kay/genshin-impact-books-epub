@@ -9,7 +9,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v3.0.1
@@ -22,19 +23,24 @@ jobs:
       matrix:
         collection: [mondstadt,liyue,inazuma,sumeru,teyvat]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
+      # wildcard * is not expanded in workflow cmd
       - name: Create files list
-        id: files_list
-        run: echo "::set-output name=files::$(printf '"%s" ' books/${{ matrix.collection }}/*)"
+        id: flist
+        run: >-
+          echo
+          "files=$(printf '"%s" ' books/${{ matrix.collection }}/*)"
+          >> $GITHUB_OUTPUT
 
       - name: Build EPUB with pandoc
         uses: docker://pandoc/core:2.18
         with:
           args: >-
-            -o genshin-impact-book-collection-${{ matrix.collection }}-${{ github.ref_name }}.epub
+            -o genshin-books-${{ matrix.collection }}-${{ github.ref_name }}.epub
             books/foreword.md
-            ${{ steps.files_list.outputs.files }}
+            ${{ steps.flist.outputs.files }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -50,13 +56,13 @@ jobs:
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v3
-        id: download
+        id: books
         with:
           path: books
 
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: '${{steps.download.outputs.download-path}}/**/*.epub'
+          files: '${{steps.books.outputs.download-path}}/**/*.epub'
           fail_on_unmatched_files: true
           generate_release_notes: true

@@ -74,9 +74,9 @@ to keep knowledge for yourself is ignorance, and that the punishment for ignoran
 
 As for the descendants of the ignorant who have lost their history, the Eremites say:
 
-> We have returned from the land of the lost,
-> The sky of the ages we have changed,
-> Fear shall not stop us,
-> No god shall we heed.
-> Across the ocean of sand akin to gravel,
-> To its end we shall sail.
+> We have returned from the land of the lost,  
+> The sky of the ages we have changed,  
+> Fear shall not stop us,  
+> No god shall we heed.  
+> Across the ocean of sand akin to gravel,  
+> To its end we shall sail.  

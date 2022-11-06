@@ -1,6 +1,7 @@
 # Genshin Impact EPUB Book Collection
 
-![Status](https://img.shields.io/github/workflow/status/c3kay/genshin-impact-books-epub/Build?style=flat)
+![Build](https://img.shields.io/github/workflow/status/c3kay/genshin-impact-books-epub/Build?style=flat)
+![Activity](https://img.shields.io/github/last-commit/c3kay/genshin-impact-books-epub)
 ![Downloads](https://img.shields.io/github/downloads/c3kay/genshin-impact-books-epub/total?style=flat)
 
 The goal of this project is to collect the in-game books of Genshin Impact and make them available

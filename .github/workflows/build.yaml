@@ -16,6 +16,7 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.0.1
         with:
           files: books
+          ignore-files: books/SUMMARY.md
 
   build:
     runs-on: ubuntu-latest

@@ -1,7 +1,9 @@
 # Genshin Impact Book Collection
+
 [Foreword](./foreword.md)
 
 # Teyvat
+
 - [Diary of Roald the Adventurer](./teyvat/diary-of-roald-the-adventurer.md)
 - [Handy Handbook of Hilichurlian](./teyvat/handy-handbook-of-hilichurlian.md)
 - [Heart's Desire](./teyvat/hearts-desire.md)
@@ -10,6 +12,7 @@
 - [Teyvat Travel Guide](./teyvat/teyvat-travel-guide.md)
 
 # Mondstadt
+
 - [1000 Years of Loneliness](./mondstadt/1000-years-of-loneliness.md)
 - [A Drunkard's Tale](./mondstadt/a-drunkards-tale.md)
 - [Along with Divinity](./mondstadt/along-with-divinity.md)
@@ -31,6 +34,7 @@
 - [Wind, Courage and Wings](./mondstadt/wind-courage-and-wings.md)
 
 # Liyue
+
 - [Customs of Liyue](./liyue/customs-of-liyue.md)
 - [Legend of the Lone Sword](./liyue/legend-of-the-lone-sword.md)
 - [Legend of the Shattered Halberd](./liyue/legend-of-the-shattered-halberd.md)
@@ -47,6 +51,7 @@
 - [Yakshas: The Guardian Adepti](./liyue/yakshas-the-guardian-adepti.md)
 
 # Inazuma
+
 - [A Legend of Sword](./inazuma/a-legend-of-sword.md)
 - [A Preliminary Study of Sangonomiya Folk Belief](./inazuma/a-preliminary-study-of-sangonomiya-folk-belief.md)
 - [Debates on the "Viceroy of the East"](./inazuma/debates-on-the-viceroy-of-the-east.md)
@@ -66,6 +71,7 @@
 - [Treasured Tales of the Chouken Shinkageuchi](./inazuma/treasured-tales-of-the-chouken-shinkageuchi.md)
 
 # Sumeru
+
 - [A Thousand Nights](./sumeru/a-thousand-nights.md)
 - [An Ode to Soul-Light](./sumeru/an-ode-to-soul-light.md)
 - [Scroll of Streaming Song](./sumeru/scroll-of-streaming-song.md)

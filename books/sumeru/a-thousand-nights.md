@@ -81,7 +81,7 @@ I will know whose dream this is."
 And so he allowed himself to be led into the depths, and just as the woman had warned him, it was a boundless, lightless
 realm. He listened then for the tiny sounds, hoping to find words that could point to a name.
 
-An unknown period of time passed before he finally heard a name amidst the scattered sounds. This sound had a strange, 
+An unknown period of time passed before he finally heard a name amidst the scattered sounds. This sound had a strange,
 special attraction to him, and he could not help but recite it.
 
 Then he opened his eyes.

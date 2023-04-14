@@ -1,14 +1,10 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: 
-      - opened
-      - reopened
   workflow_dispatch:
+  push:
+  pull_request:
+    types: [opened,reopened]
 
 jobs:
   lint:

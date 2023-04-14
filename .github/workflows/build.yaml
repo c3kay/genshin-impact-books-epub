@@ -2,8 +2,13 @@ name: Build
 
 on:
   push:
+    branches:
+      - master
   pull_request:
-    types: [opened, reopened]
+    types: 
+      - opened
+      - reopened
+  workflow_dispatch:
 
 jobs:
   lint:
@@ -12,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: markdownlint-cli
+      - name: Lint Markdown files
         uses: nosborn/github-action-markdown-cli@v3.0.1
         with:
           files: books

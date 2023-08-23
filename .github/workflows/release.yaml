@@ -1,48 +1,40 @@
-name: Build
+name: Release
 
 on:
-  workflow_dispatch:
   push:
-  pull_request:
-    types: [opened,reopened]
+    tags:
+      - 'v*'
+  workflow_dispatch:
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Lint Markdown files
-        uses: nosborn/github-action-markdown-cli@v3.0.1
-        with:
-          files: books
-
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        collection: [mondstadt,liyue,inazuma,sumeru,teyvat]
+        collection:
+          - mondstadt
+          - liyue
+          - inazuma
+          - sumeru
+          - fontaine
+          - teyvat
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      # wildcard * is not expanded in workflow cmd
       - name: Create files list
+        # wildcard * is not expanded in workflow cmd
         id: flist
         run: >-
           echo
           "files=$(printf '"%s" ' books/${{ matrix.collection }}/*)"
           >> $GITHUB_OUTPUT
-
       - name: Build EPUB with pandoc
-        uses: docker://pandoc/core:2.18
+        uses: docker://pandoc/core:3.1
         with:
           args: >-
             -o genshin-books-${{ matrix.collection }}-${{ github.ref_name }}.epub
             books/foreword.md
             ${{ steps.flist.outputs.files }}
-
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
@@ -51,19 +43,16 @@ jobs:
           if-no-files-found: error
 
   release:
-    needs: [build, lint]
-    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v3
-        id: books
         with:
-          path: books
-
+          path: epub
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: '${{steps.books.outputs.download-path}}/**/*.epub'
+          files: epub/*
+          body_path: CHANGES.md
           fail_on_unmatched_files: true
-          generate_release_notes: true

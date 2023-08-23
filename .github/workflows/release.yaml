@@ -53,6 +53,6 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: epub/*
+          files: epub/**/*.epub
           body_path: CHANGES.md
           fail_on_unmatched_files: true

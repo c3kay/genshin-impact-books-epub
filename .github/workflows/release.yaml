@@ -19,7 +19,7 @@ jobs:
           - teyvat
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Create files list
         # wildcard * is not expanded in workflow cmd
         id: flist
@@ -35,7 +35,7 @@ jobs:
             books/foreword.md
             ${{ steps.flist.outputs.files }}
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.collection }}
           path: '*.epub'
@@ -46,16 +46,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout changes file
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           sparse-checkout: CHANGES.md
           sparse-checkout-cone-mode: false
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: epub
       - name: Create release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: epub/**/*.epub
           body_path: CHANGES.md

@@ -1,4 +1,4 @@
 ### Added
 
-- Perinheri
-- Anecdota Septentrionalis
+- The Feline Firm
+- The Little Witch and the Undying Fire

@@ -1,4 +1,6 @@
 ### Added
 
-- The Feline Firm
-- The Little Witch and the Undying Fire
+- Maawe and Monetoo
+- Records of Hanan Pacha
+- The Tale of Qoyllor and Ukuku
+- The Volcano Lord and the Shadow Pins

@@ -16,6 +16,7 @@ jobs:
           - inazuma
           - sumeru
           - fontaine
+          - natlan
           - teyvat
     steps:
       - name: Checkout

@@ -20,3 +20,18 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
           files: books
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check Metadata
+        run: |
+          bookdirs=$(find "books" -type d)
+          for subdir in $bookdirs; do
+              if [ ! -f "$subdir/metadata.yaml" ]; then
+                  echo "Error: 'metadata.yaml' is missing in the folder '$subdir'."
+                  exit 1
+              fi
+          done
+          echo "All subfolders contain the 'metadata.yaml' file."

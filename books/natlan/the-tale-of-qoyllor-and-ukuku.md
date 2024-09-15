@@ -114,4 +114,4 @@ As for Ukuku, who had been left behind, his deceit and betrayal angered the Sun.
 Sun's golden arrows. From then on, wherever he went, the Sun would retreat behind the clouds, leaving him without a
 trace of sunlight. Even their child Kuntur, who was still very young at the time, was affected by this. As a result, he
 was unable to form a single friendship with any Saurian until he had grown up to be a young man. But as for Kuntur's
-adventures thereafter... Well, that is another story entirely. 
+adventures thereafter... Well, that is another story entirely.

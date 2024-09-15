@@ -189,4 +189,4 @@ return."
 suspense?"
 
 Anyway, after the Sage of the Stolen Flame left, Chaac accepted the guidance of the Lord of the Night, and established
-permanently settled tribes on the land. The age of the humans of Natlan began, but that is a story for another time. 
+permanently settled tribes on the land. The age of the humans of Natlan began, but that is a story for another time.

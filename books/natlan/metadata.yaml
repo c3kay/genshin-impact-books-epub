@@ -1,0 +1,21 @@
+---
+title:
+  - type: main
+    text: Genshin Impact - Books of Natlan
+  - type: collection
+    text: Genshin Impact Book Collection
+creator:
+  - role: aut
+    text: Hoyoverse
+contributor:
+  - role: col
+    text: c3kay
+identifier:
+  - scheme: URN
+    text: urn:hoyoverse:genshin-impact-book-collection-natlan
+date: 2024
+lang: en-US
+rights: Copyright 2024 Cognosphere PTE. LTD. All rights reserved.
+belongs-to-collection: Genshin Impact Book Collection
+group-position: 7
+---

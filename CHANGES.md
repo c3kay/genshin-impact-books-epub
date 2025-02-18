@@ -1,6 +1,8 @@
 ### Added
 
-- Maawe and Monetoo
-- Records of Hanan Pacha
-- The Tale of Qoyllor and Ukuku
-- The Volcano Lord and the Shadow Pins
+- The Tale of Kuntur
+- Fires of Autumn Twilight
+- Mt. Lingmeng Gossip
+- Springs of Hidden Jade
+- Men of Lithin
+- Glimpses of Mysterious Inazuma

@@ -17,6 +17,7 @@ jobs:
           - sumeru
           - fontaine
           - natlan
+          - nod-krai
           - teyvat
     steps:
       - name: Checkout

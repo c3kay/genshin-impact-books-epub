@@ -8,7 +8,17 @@ on:
       - 'v*'
 
 jobs:
-  prepare:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Lint Markdown files
+        uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: books
+
+  prepare-matrix:
     runs-on: ubuntu-latest
     outputs:
       collections: ${{ steps.collections.outputs.collections }}
@@ -19,18 +29,27 @@ jobs:
         id: collections
         shell: bash
         run: |
-          collections=$(jq -R -s -c 'split("\n")[:-1]' books/.order.txt)
+          collections=$(jq -R -s -c 'split("\n")[:-1]' books/collections.txt)
           echo "collections=$collections" >> "$GITHUB_OUTPUT"
 
   build-region:
     runs-on: ubuntu-latest
-    needs: prepare
+    needs:
+      - prepare-matrix
+      - lint
     strategy:
       matrix:
         collection: ${{ fromJSON(needs.prepare.outputs.collections) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Check metadata file
+        run: |
+          if [ ! -f "books/${{ matrix.collection }}/metadata.yaml" ]; then
+              echo "Error: 'metadata.yaml' is missing!"
+              exit 1
+          fi
+          echo "Found 'metadata.yaml' file!"
       - name: Create file list
         # wildcard * is not expanded in workflow cmd
         id: region-books
@@ -55,9 +74,18 @@ jobs:
     
   build-combined:
     runs-on: ubuntu-latest
+    needs:
+      - lint
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+      - name: Check metadata file
+        run: |
+          if [ ! -f "books/metadata.yaml" ]; then
+              echo "Error: 'metadata.yaml' is missing!"
+              exit 1
+          fi
+          echo "Found 'metadata.yaml' file!"
       - name: Create file list
         id: all-books
         shell: bash
@@ -68,7 +96,7 @@ jobs:
             for file in "books/$collection"/*.md; do
               [[ -f "$file" ]] && files+=("$file")
             done
-          done < books/.order.txt
+          done < books/collections.txt
           echo "files=${files[*]}" >> "$GITHUB_OUTPUT"
       - name: Build EPUB with pandoc
         uses: docker://pandoc/core:3.1
@@ -93,7 +121,7 @@ jobs:
       - build-combined
     steps:
       - name: Checkout changes file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           sparse-checkout: CHANGES.md
           sparse-checkout-cone-mode: false

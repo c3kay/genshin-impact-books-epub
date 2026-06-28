@@ -205,3 +205,57 @@ What will her answer be?
 Editor's note: The author of "Vera's Melancholy" is now off living the high life with the royalties from the first nine
 volumes. If you happen to see him in your corner of the universe, please help us to impress upon him the urgency with
 which we require the next volume.
+
+## Volume 11: The Beast Calling Out for Love at the Heart of the World
+
+Of course the story had to be set in Delphi. How else was I supposed to make good on the title of the final volume?
+Every day was a celebration, and every day a festival.  For the boys and girls who were young no longer, nothing
+remained but the endless flow of happy time.
+
+Alone in his estate, Ike sat, nursing a glass of apple juice. A knock came from Princess Andro-Basilisks. Tal, evil
+spirit and butler of the manor, winced. A painful memory of its "front teeth," otherwise known as the front doors, being
+kicked wide open, swam to mind.  Ultimately, caught between its master's orders of "I want to be alone, don't let anyone
+in" and the prospect of its front teeth throbbing in agony, it decided to let its master fend for himself.  Fortunately,
+Ike did not blame it this time. The silent boy, that fragment of time itself, poured the princess a glass of apple
+juice.  "What do you plan to do?" The fact that Ike was actually taking a proactive interest in her affairs was a rare
+sight indeed.  "I took the very eyes from Sachi's head. Even with new ones put back in, even if time itself were turned
+back, I could never, ever love another." The Princess swirled her glass. "In all these broken shards of time, is there
+really no ending meant for me?" "Would you truly reach across the branches of possibility to steal joy from the other
+versions of yourself?" "I suppose you're right. In that case, I'll wait. I'll wait until Vera grows old and finishes her
+happy little life. After that, I'll tie Sachi up and take him back to the Andromeda Empire." Sachi had already undergone
+countless augmentations and signed the contracts of infinite Great Beings. He... He could only pretend to grow old. He
+would spend old age acting out youth, knowing all too well that real youth, once gone, is gone forever.  "That answer
+eases my worries a little." After a long silence, Ike spoke again. "With this operation, the echoes of time have
+multiplied. Somewhere in the universe, there may now be another 'me.' I must find him, duel him, and merge our souls
+back into one." "I see." They tapped their glasses together. The princess finished the last of her drink, then closed
+the door and left.
+
+Under the full moon and the starry sky, Ike went for a walk. From the hills, he looked down at Delphi. Suddenly, he took
+off his glasses and wiped away his tears.  "I love you all. I love all of you!" That echo of time shouted the words at a
+deafening volume. It rang loudly through time itself, a sound so thunderous that, throughout the vast universe and into
+the depths of forever, his proclamation was the only thing to be heard.  But this was Delphi. Neither the center nor the
+heart of the universe, only an ordinary town. The night wind carried his shout away, and soon it vanished among the
+lights of happy homes and the dawn of human youth.
+
+## Volume 12: A Plea for Love From the Heart of the World
+
+It wasn't long before Sachi and Vera were old enough to be engaged.  The day of their wedding was already drawing near.
+But then, Ike sought Sachi out with a warning.  "This universe is on the brink of destruction. We need you... for one
+more adventure, just like in the old days." But then, Ike saw the engagement rings on their fingers, and he shook his
+head. "No, I had forgotten. You are only a mortal now." He turned to leave, but a hand caught his shoulder.  "Be honest.
+How much do the odds change without me?" Ike took off his glasses and polished them. "I've plenty of familiars now...
+Your help wouldn't make much of a difference." "You still wipe your glasses every time you lie." Ike sighed. "You're the
+finest interstellar warrior we've got. Without you, our chances drop by nearly a third." "Then count me in. If the
+universe falls, Delphi, the Virgo Nebula... and Vera too, they will all disappear. I must save the world."
+
+When did Vera lose her desire for adventure? Perhaps it happened the moment what was lost was returned. People say
+Delphi is the heart, the center, of the world, and people say "I love you," but they're just words until they are
+proven. Someone has to set out alone. Someone has to cross mountains and rivers, sail across oceans, walk through
+forests and scorched sands, and see every rose the world has to offer. If, after all that, they still find their way
+back to you... Only then is it proven that the world is round, that this place is its heart, and that they truly love
+you.
+
+The seasons turned, and the wait became a great, long silence. But Vera lived in that silence, still believing that
+Sachi was on his way back to her.  Since the world had not ended today, it meant that somewhere, in a corner of the
+universe, her friends had succeeded. They must have saved the world, after all.  "I love you all. I love all of you."
+And so Vera whispered, a soft plea for love, rising from the heart of the world.

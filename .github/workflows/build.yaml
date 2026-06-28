@@ -39,7 +39,7 @@ jobs:
       - lint
     strategy:
       matrix:
-        collection: ${{ fromJSON(needs.prepare.outputs.collections) }}
+        collection: ${{ fromJSON(needs.prepare-matrix.outputs.collections) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -66,7 +66,7 @@ jobs:
             books/foreword-region.md
             ${{ steps.region-books.outputs.files }}
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.collection }}
           path: '*.epub'
@@ -107,7 +107,7 @@ jobs:
             books/foreword-combined.md
             ${{ steps.all-books.outputs.files }}
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: combined
           path: '*.epub'
@@ -126,7 +126,7 @@ jobs:
           sparse-checkout: CHANGES.md
           sparse-checkout-cone-mode: false
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: epub
       - name: Create release

@@ -2,6 +2,7 @@ mondstadt
 liyue
 inazuma
 sumeru
+fontaine
 natlan
 nod-krai
 teyvat

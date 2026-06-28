@@ -10,7 +10,7 @@ Texts have been taken from the [Genshin Impact Wiki](https://genshin-impact.fand
 A few quest-item books have not been included in this collection, due to very short or (imo.)
 irrelevant content.
 
-The books are available as EPUB file separately for each region or as combined book collection.
+The books are available as EPUB file separately for each region or as combined book collection.  
 **You can download the EPUB files on the [release page](https://github.com/c3kay/genshin-impact-books-epub/releases)**!
 
 <sub>*Disclaimer: The book contents (i.e. texts and illustrations) are the property of Cognosphere PTE.

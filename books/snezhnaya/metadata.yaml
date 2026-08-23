@@ -1,6 +1,8 @@
 ---
 title:
   - type: main
+    text: Genshin Impact - Books of Snezhnaya
+  - type: collection
     text: Genshin Impact Book Collection
 creator:
   - role: aut
@@ -10,8 +12,10 @@ contributor:
     text: c3kay
 identifier:
   - scheme: URN
-    text: urn:hoyoverse:genshin-impact-book-collection
-date: 2026-08-23
+    text: urn:hoyoverse:genshin-impact-book-collection-snezhnaya
+date: 2026
 lang: en-US
 rights: Copyright 2020-2026 Cognosphere PTE. LTD. All rights reserved.
+belongs-to-collection: Genshin Impact Book Collection
+group-position: 9
 ---
